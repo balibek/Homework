@@ -1,0 +1,138 @@
+<html>
+   <head>
+       <title>
+           Registration form 1
+       </title>
+
+       <link rel="stylesheet" href="styleshw.css">
+   </head> 
+
+   <body>
+       <div class = "center">       
+           <h1>Приглашение!</h1>
+           <h3>Приглашаю Вас на вечеринку в честь празднования окончания пандемии. Вечеринка состоится 25 июля 2020 года по адресу г.Нур-султан, ул.е10, дом 11. Время начала 18.00</h3>
+           <img src="SapaSoft.jpg" alt="" width="400px">
+               <div class="form-group">
+                <h3>Список горячих блюд</h3>
+                   <ol>
+                       <li>Стейк рибай</li>
+                       <li>Семга с рисом</li>
+                       <li>Курица с грибами</li>
+                   </ol>
+               </div>
+               <div class="form-group">
+                   <h3>Список напитков</h3>
+                   <ul>
+                       <li>Шампанское</li>
+                       <li>Красное и белое вино</li>
+                       <li>Виски</li>
+                       <li>Прохладительные напитки</li>
+                   </ul>
+               </div>
+               <div class="form-group">
+                   <h3>Список приглашенных</h3>
+                   <table>
+                       <tr>
+                           <th>Имя</th>
+                           <th>Возраст</th>
+                           <th>Родство</th>
+                           <th colspan="2">Контакты</th>
+                       </tr>
+                       <tr>
+                           <td>Меруерт</td>
+                           <td>18+</td>
+                           <td>Друзья</td>
+                           <td>271689</td>
+                           <td>mika@mail.ru</td>
+                       </tr>
+                       <tr>
+                           <td>Динара</td>
+                           <td>18+</td>
+                           <td>Друзья</td>
+                           <td>526396</td>
+                           <td>dino@mail.ru</td>
+                       </tr>
+                       <tr>
+                           <td>Ляззат</td>
+                           <td>18+</td>
+                           <td>Друзья</td>
+                           <td>523695</td>
+                           <td>lyka@mail.ru</td>
+                       </tr>
+                       <tr>
+                           <td>Алмат</td>
+                           <td>30</td>
+                           <td>Коллеги</td>
+                           <td>863254</td>
+                           <td>almat@mail.ru</td>
+                       </tr>
+                       <tr>
+                           <td>Нурлан</td>
+                           <td>32</td>
+                           <td>Родные</td>
+                           <td>963254</td>
+                           <td>nuka@mail.ru</td>
+                       </tr>
+                   </table>
+               </div>
+
+           <form method="get" action="https://www.w3schools.com/action_page.php" target="_blank">
+            <div class="form-group">
+                <h2>Заполните форму</h2>
+                <label for="fname" class="label-style">Укажите свое имя</label><br>
+                <input type="text" id="fname" name="fname" class="form-control">
+            </div> 
+            <div class="form-group"> 
+                <label for="guests" class="label-style">Укажите степень родства</label><br>
+                <select id="guests" name="guests" class="form-control">
+                    <option value="friends">Друзья</option>
+                    <option value="colleagues">Коллеги</option>
+                    <option value="relatives">Родные</option>
+                </select>
+            </div>
+            <div class="form-group">   
+                <ladel for="bday" class="label-style">Укажите дату рождения</ladel><br>
+                <input type="date" id="bday" name="bday" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="countg" class="label-style">Количество гостей с вами</label>
+                <input type="number" id="countg" name="countg" min="1" max="4">
+            </div>
+            <div class="form-group">
+                <div class="label-style">Выбор горячего блюда</div>
+                <input type="radio" id="steak" name="food" value="steak">
+                <label for="steak">Мясо</label><br>
+                <input type="radio" id="fish" name="food" value="fish">
+                <label for="fish">Рыба</label><br>
+                <input type="radio" id="chicken" name="food" value="chicken">
+                <label for="chicken">Курица</label>
+            </div>
+            <div class="form-group">
+                <div class="label-style">Выбор напитков</div>
+                <input type="checkbox" id="shamp" name="shamp" value="shamp">
+                <label for="shamp">Шампанское</label><br>
+                <input type="checkbox" id="rwine" name="drinks" value="rwine">
+                <label for="rwine">Красное вино</label><br>
+                <input type="checkbox" id="wwine" name="drinks" value="wwine">
+                <label for="wwine">Белое вино</label><br>
+                <input type="checkbox" id="whiskey" name="drinks" value="whiskey">
+                <label for="whiskey">Виски</label>
+            </div>
+            <div class="form-group">
+                <label for="chance" class="label-style">Уверенность в приходе</label><br>
+                <input type="range" id="chance" name="chance" min="50" max="100" value="100" class="form-control">
+            </div>
+            <div class="form-group">
+                <textarea name="comm" rows="10" cols="53">Напишите свои пожелания</textarea>
+            </div>
+            <div class="form-group">
+                <label for="pwd" class="label-style">Укажите пароль</label><br>
+                <input type="password" id="pwd" name="pwd" class="form-control">
+            </div class="form-group"> 
+            <div class="form-group">
+                <input type="submit" value="Отправить">
+            </div>        
+        </form>
+       </div>
+   </body>
+</html>
